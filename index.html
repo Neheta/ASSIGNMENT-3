@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="en" data-theme="light"></html>
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,11 +35,11 @@
     
     
 </head>
-<body class="font-Manrope">
+<body class="font-Manrope bg-base-200">
     
-    <header class="container mx-auto">
+    <header class=" mx-auto bg-base-200">
         <!-- navbar from daisy ui  -->
-        <div class="navbar bg-base-100 container mx-auto space-x-3">
+        <div class="navbar bg-base-200 container mx-auto space-x-3">
             <div class="navbar-start ">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -59,7 +58,7 @@
                 </div>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  class="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                   <li><a>Home</a></li>
                 <li><a>Services</a></li>
                 <li><a>Portfolio</a></li>
@@ -74,7 +73,7 @@
               <h4 class="text-2xl font-extrabold">Rinterio<h4>
             </div>
             </div>
-            <div class="navbar-center hidden lg:flex text-gray-500">
+            <div class="navbar-center bg-base-200 hidden lg:flex text-gray-500">
               <ul class="menu menu-horizontal px-1 text-base font-normal">
                 <li><a class="font-extrabold">Home</a></li>
                 <li><a>Services</a></li>
@@ -104,7 +103,7 @@
 
           <!-- banner -->
            <div class="Banner flex flex-col container mx-auto justify-center items-center mt-1.5 w-11/12">
-            <div class="image-1 justify-center lg:w-2/4 sm:w-full mb-5">
+            <div class="image-1 justify-center lg:w-2/4 sm:w-full mb-16">
                 <img class="" src="images/banner.png" alt="">
 
             </div>
@@ -113,7 +112,7 @@
                 <p class="font-medium text-base text-gray-900 mb-8"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
 
 
-                <a class="btn btn-success bg-greenprimary bg-opacity-45 border-greenprimary rounded-full font-bold text-xl ">View Details <div class="greencircle bg-greenprimary  rounded-full flex items-center justify-center w-7 h-7 text-gray-700"><i class="ri-arrow-right-up-line text-xl font-extralight p"></i></div> </a>
+                <a class="btn btn-success bg-greenprimary bg-opacity-45 border-greenprimary rounded-full font-bold text-xl mb-16">View Details <div class="greencircle bg-greenprimary  rounded-full flex items-center justify-center w-7 h-7 text-gray-700"><i class="ri-arrow-right-up-line text-xl font-extralight p"></i></div> </a>
             </div>
 
 
@@ -122,26 +121,30 @@
 
     </header>
    <main class="container">
-    <section-1>
-    <h6>Hello bitcvoiuhwelodhnwq</h6>
+    <section-1 class="container">
+    
     <div class="arrow hidden lg:flex  w-50 h-50 container ml-10">
         <img  class="w-50 h-50 "  src="images/Vector.png" alt="">
     </div>
-    <div class="about-us">
-        <div class="card lg:card-side bg-base-100 shadow-xl">
+    <div class="about-us container mx-auto flex w-10/12 ">
+        <div class="card lg:card-side bg-base-200 pt-0 mt-0  ">
             
-            <div class="card-body">
-              <h2 class="card-title">New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Listen</button>
-              </div>
+            <div class="card-body flex justify-center -mt-5">
+              <div class="card-actions flex justify-center lg:justify-start">
+
+                <!-- About us button -->
+               <button class="border-wite  rounded-full bg-white w-[7rem] text-base"> <i class="ri-arrow-right-line"></i> About Us</button>
             </div>
-            <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-                  alt="Album" />
-              </figure>
+              <h2 class="card-title text-4xl font-bold text-gray-900 tracking-tight">We design thoughtful, liveable spaces</h2>
+              <p class="text-base font-medium text-gray-900">The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+             
+            </div>
+            <div>
+              <img
+                src="images/Rectangle.png"
+                alt="Album" />
+            </div>
           </div>
     
     </div>
