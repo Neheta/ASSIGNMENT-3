@@ -17,13 +17,28 @@
         .font-Manrope{
          font-family: "Manrope", sans-serif;}
     </style>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                greenprimary: '#ABEF5F',
+                greensecondary:'#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
+    
+    
 </head>
 <body class="font-Manrope">
     
-    <header>
+    <header class="container mx-auto">
         <!-- navbar from daisy ui  -->
-        <div class="navbar bg-base-100 container mx-auto">
-            <div class="navbar-start">
+        <div class="navbar bg-base-100 container mx-auto space-x-3">
+            <div class="navbar-start ">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg
@@ -52,8 +67,8 @@
               <!-- brand-name -->
                <div class="logo flex space-x-2">
 
-              <div class="greencircle bg-green-400 border rounded-full flex items-center justify-center w-7 h-7"><i class="ri-arrow-right-up-line text-2xl p"></i></div>
-              <h4 class="text-2xl">Rinterio<h4>
+              <div class="greencircle bg-greenprimary border rounded-full flex items-center justify-center w-7 h-7"><i class="ri-arrow-right-up-line text-2xl p"></i></div>
+              <h4 class="text-2xl font-extrabold">Rinterio<h4>
             </div>
             </div>
             <div class="navbar-center hidden lg:flex text-gray-500">
@@ -67,7 +82,7 @@
 
               </ul>
             </div>
-            <div class="navbar-end space-x-2">
+            <div class="navbar-end hidden lg:flex space-x-4 mb-4">
         
                     <div class=" search  bg-white border-2 border-gray-100 rounded-full flex items-center justify-center w-10 h-10 text-xl text-gray-500"> 
                      <i class="ri-search-line "></i>
@@ -80,9 +95,27 @@
                </div>
 
                 
-              <a class="btn btn-success border rounded-full ">Book Consult <div class="greencircle bg-slate-950  rounded-full flex items-center justify-center w-7 h-7 text-white"><i class="ri-arrow-right-up-line text-xl font-extralight p"></i></div> </a>
+              <a class="btn btn-success w-52 bg-greenprimary border-greenprimary rounded-full font-bold text-xl">Book Consult <div class="greencircle bg-slate-950  rounded-full flex items-center justify-center w-7 h-7 text-white"><i class="ri-arrow-right-up-line text-xl font-extralight p"></i></div> </a>
             </div>
           </div>
+
+          <!-- banner -->
+           <div class="Banner flex flex-col container mx-auto justify-center items-center mt-1.5 w-11/12">
+            <div class="image-1 justify-center lg:w-2/4 sm:w-full mb-5">
+                <img class="" src="images/banner.png" alt="">
+
+            </div>
+            <div class="contents justify-center text-center w-4/5 sm:w-full mb-4" >
+                <h6 class="lg:text-6xl font-extrabold mb-6 text-2xl">A barn house of this design has a striking appearance</h6>
+                <p class="font-medium text-base text-gray-900 mb-5"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+
+                <a class="btn btn-success bg-greenprimary bg-opacity-45 border-greenprimary rounded-full font-bold text-xl ">View Details <div class="greencircle bg-greenprimary  rounded-full flex items-center justify-center w-7 h-7 text-gray-700"><i class="ri-arrow-right-up-line text-xl font-extralight p"></i></div> </a>
+            </div>
+
+
+
+           </div>
 
     </header>
    <main>
